@@ -8,20 +8,21 @@ export default function Footer() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="space-y-4"
+        className="container mx-auto space-y-4"
       >
         <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
         <div className="flex justify-center space-x-6">
-          <a href="https://github.com/YOUR_USERNAME " target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/YOUR_USERNAME " target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
             <FaGithub size={24} />
           </a>
-          <a href="https://linkedin.com/in/your-profile " target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/YOUR_PROFILE " target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
             <FaLinkedin size={24} />
           </a>
-          <a href="mailto:you@example.com">
+          <a href="mailto:you@example.com" className="hover:text-blue-400 transition-colors">
             <FaEnvelope size={24} />
           </a>
         </div>
+        <p className="text-sm text-gray-400">Built with ❤️ using React & Tailwind</p>
       </motion.div>
     </footer>
   );
